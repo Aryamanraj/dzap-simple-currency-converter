@@ -1,0 +1,155 @@
+.main {
+    width: 100vw;
+    height: 94vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main .left {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main .left .left-inner {
+    border: 1px solid #664ffa;
+    height: auto;
+    width: 70%;
+    border-radius: 8px;
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 14px;
+    flex-direction: column;
+    gap: 20px;
+}
+.main .left .left-inner .top {
+    height: 5%;
+    font-family: "Poppins" sans-serif;
+    font-size: 25px;
+    font-weight: 800;
+    color: #664ffa;
+    display: flex;
+    align-items: center;
+    padding-left: 14px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.main .left .left-inner .currency {
+    width: 94%;
+    margin-left: 3%;
+    margin-right: 3%;
+    border-radius: 8px;
+    height: auto;
+    border: 1px solid #664ffa;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.main .left .left-inner .currency .item {
+    font-family: "Poppins" sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    height: 35px;
+    padding-left: 14px;
+    display: flex;
+    gap: 20px;
+}
+.main .left .left-inner .currency .item.head {
+    cursor: pointer;
+}
+.main .left .left-inner .currency .item.head:hover {
+    cursor: pointer;
+    font-weight: 700;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+}
+.main .left .left-inner .currency .item input {
+    background: inherit;
+    border: none;
+    outline: none;
+    font-family: "Poppins" sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+}
+.main .left .left-inner .currency .item.val {
+    border: none;
+    height: 35px;
+    border-top: 0.2px solid linear-gradient(270deg, #885bfe 40%, #664ffa 60%);
+}
+.main .left .left-inner .currency .select-list {
+    width: 94%;
+    height: 200px;
+    overflow: scroll;
+    z-index: 1;
+    top: 10px;
+    margin-left: 3%;
+    gap: 2px;
+   /* Customizing the scrollbar handle */
+   /* Handle on hover */
+   /* Customizing the scrollbar track (background) */
+}
+.main .left .left-inner .currency .select-list .select-list::-webkit-scrollbar-track {
+    background: #664ffa;
+    border-radius: 10px;
+   /* Optional: for rounded corners */
+}
+.main .left .left-inner .currency .select-list .select-list::-webkit-scrollbar-thumb {
+    background: #664ffa;
+    border-radius: 10px;
+   /* Optional: for rounded corners */
+}
+.main .left .left-inner .currency .select-list .select-list::-webkit-scrollbar-thumb:hover {
+    background: #664ffa;
+}
+.main .left .left-inner .currency .select-list .Opt {
+    color: #664ffa;
+    width: 94%;
+    padding-left: 1%;
+    height: 32px;
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.main .left .left-inner .currency .select-list .Opt:hover {
+    color: #664ffa;
+    font-weight: 800;
+    background: #ababc7;
+    border-radius: 8px;
+}
+.main .left .left-inner .convert {
+    width: 160px !important;
+    cursor: pointer;
+    height: 30px;
+    background: #664ffa;
+    width: 50%;
+    margin-left: 3%;
+    margin-right: 10%;
+    border-radius: 8px;
+    font-family: "Poppins" sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media (max-width: 600px) {
+    .main .left {
+        width: 100%;
+       /* Adjust width for mobile view */
+        height: auto;
+       /* Adjust height for mobile view */
+   }
+    .main .left .left-inner {
+        width: 90%;
+        height: auto;
+   }
+    .main .right {
+        display: none;
+   }
+}
