@@ -1,0 +1,92 @@
+swagger: "2.0"
+info:
+  description: "API for Crypto Operations"
+  version: "1.0.0"
+  title: "Crypto API Service"
+
+# Base path for your endpoints
+basePath: "/api"
+
+# Schemes define the protocol your API accepts
+schemes:
+- "http"
+
+paths:
+  /supported-currencies:
+    get:
+      summary: "Get supported currencies"
+      description: "Returns a list of supported crypto and fiat currencies"
+      responses:
+        200:
+          description: "Successful response"
+          schema:
+            type: "object"
+            properties:
+              crypto:
+                type: "array"
+                items:
+                  type: "string"
+              fiat:
+                type: "array"
+                items:
+                  type: "string"
+              others:
+                type: "array"
+                items:
+                  type: "string"
+
+  /market-data:
+    get:
+      summary: "Get market data"
+      description: "Retrieves market data for cryptocurrencies"
+      responses:
+        200:
+          description: "Successful response"
+          schema:
+            type: "array"
+            items:
+              type: "object"
+              properties:
+                id:
+                  type: "string"
+                image:
+                  type: "string"
+                name:
+                  type: "string"
+                symbol:
+                  type: "string"
+
+  /calculate-price:
+    post:
+      summary: "Calculate cryptocurrency price"
+      description: "Calculates the price of a given amount of cryptocurrency"
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      parameters:
+      - in: "body"
+        name: "body"
+        description: "Currency, supported currency, and amount to calculate"
+        required: true
+        schema:
+          type: "object"
+          properties:
+            currency:
+              type: "string"
+            supported:
+              type: "string"
+            amount:
+              type: "number"
+      responses:
+        200:
+          description: "Successful response"
+          schema:
+            type: "object"
+            properties:
+              currentPriceData:
+                type: "number"
+              total:
+                type: "number"
+        400:
+          description: "Invalid input"
