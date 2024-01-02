@@ -1,0 +1,37 @@
+{
+  "name": "api-services",
+  "version": "1.0.0",
+  "description": "API services for Simple Currency Converter for Dzap",
+  "main": "src/server.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aryamanraj/dzap-simple-currency-converter.git"
+  },
+  "keywords": [
+    "crypto",
+    "nodejs",
+    "rest",
+    "apis"
+  ],
+  "author": "Aryamanraj",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aryamanraj/dzap-simple-currency-converter/issues"
+  },
+  "homepage": "https://github.com/Aryamanraj/dzap-simple-currency-converter#readme",
+  "dependencies": {
+    "axios": "^1.6.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "morgan": "^1.10.0",
+    "node-cache": "^5.1.2",
+    "swagger-ui-express": "^5.0.0",
+    "winston": "^3.11.0",
+    "yamljs": "^0.3.0"
+  }
+}
