@@ -12,43 +12,43 @@ This platform consists of a React-based web client and a Node.js/Express API ser
 ### Web Client Installation
 
 1. Clone the repository to your local machine.
-   /```
+   ```
    git clone https://github.com/Aryamanraj/dzap-simple-currency-converter.git
-   /```
+   ```
 
 2. Navigate to the `web-client` directory.
-   /```
+   ```
    cd web-client
-   /```
+   ```
 
 3. Install the dependencies.
-   /```
+   ```
    npm install
-   /```
+   ```
 
 4. Start the development server.
-   /```
+   ```
    npm start
-   /```
+   ```
 
    The application will be available at `http://localhost:3000`.
 
 ### API Services Installation
 
 1. Navigate to the `api-services` directory.
-   /```
+   ```
    cd api-services
-   /```
+   ```
 
 2. Install the dependencies.
-   /```
+   ```
    npm install
-   /```
+   ```
 
 3. Start the server.
-   /```
+   ```
    npm start
-   /```
+   ```
 
    The server will be running on `http://localhost:5000`.
 
