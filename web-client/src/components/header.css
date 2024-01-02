@@ -1,0 +1,11 @@
+.header {
+    height: 3.9vh;
+    padding: 1vh;
+    overflow: hidden;
+    display: flex;
+}
+.line {
+    background: linear-gradient(270deg, #885bfe 40%, #664ffa 60%);
+    height: 0.12vh;
+    width: 100%;
+}
